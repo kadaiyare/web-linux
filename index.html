@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Web Linux</h1>
+    
+    <div class="controls">
+        <select id="os-select">
+            <option value="buildroot">Buildroot Linux</option>
+            <option value="openbsd">OpenBSD</option>
+        </select>
+        <button id="start-btn">起動</button>
+        <button id="stop-btn" disabled>停止</button>
+    </div>
+
+    <div id="screen_container">
+        <div></div>
+        <canvas></canvas>
+    </div>
+
+    <hr>
+    <p>
+        Created by <a href="https://github.com/kadaiyare">@kadaiyare</a> |
+        Powered by <a href="https://github.com/copy/v86">v86</a> (BSD-2-Clause)
+    </p>
+
+    <script src="main.js"></script>
+</body>
+</html>
